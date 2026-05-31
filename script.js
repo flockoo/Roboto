@@ -111,7 +111,7 @@ function drawWobblyCaptcha() {
     if (!canvasCaptcha) return;
     
     const ctxCaptcha = canvasCaptcha.getContext("2d");
-    const text = "F²LORENT";
+    const text = "FLORENT";
     
     canvasCaptcha.width = 350;
     canvasCaptcha.height = 100;

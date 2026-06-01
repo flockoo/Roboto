@@ -374,7 +374,7 @@ function goToStep3() {
 
 function attemptGlobalValidation() {
     const userInput = kaptchaInput.value.trim();
-    const isFlorentOk = (userInput.toLowerCase() === "florent");
+    const isFlorentOk = (userInput.toLowerCase() === "f²lorent");
     
     if (!isFlorentOk && isRecaptchaChecked) {
         errorMsgSpan.innerText = "❌ Ayyiii c'est quoi ce zgeg";
@@ -407,7 +407,7 @@ function attemptGlobalValidation() {
 function checkBothConditions() {
     if (waitingForValidation) return;
     const inputVal = kaptchaInput.value.trim();
-    const inputOk = (inputVal.toLowerCase() === "florent");
+    const inputOk = (inputVal.toLowerCase() === "f²lorent");
     if (inputOk && isRecaptchaChecked) {
         attemptGlobalValidation();
     } else {
